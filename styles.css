@@ -31,16 +31,16 @@ body {
   --clr-bg-alt: #fff;
   --clr-fg: #555;
   --clr-fg-alt: #444;
-  --clr-primary: #2978b5;
+  --clr-primary: #1A7D36;
   --shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .dark {
-  --clr-bg: #23283e;
-  --clr-bg-alt: #2a2f4c;
-  --clr-fg: #bdbddd;
-  --clr-fg-alt: #cdcdff;
-  --clr-primary: #90a0d9;
+  --clr-bg: #000000;
+  --clr-bg-alt: #000000;
+  --clr-fg: #ffffff;
+  --clr-fg-alt: #ffffff;
+  --clr-primary: #7EC980;
   --shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
@@ -320,6 +320,90 @@ main {
 }
 
 .project .link--icon {
+  margin-left: 0.5em;
+}
+
+.ad_creatives__grid {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18em, 1fr));
+  grid-gap: 2em;
+}
+
+.ad_creative {
+  padding: 2em;
+  margin: 0 auto;
+  text-align: center;
+  box-shadow: var(--shadow);
+  transition: transform 0.2s linear;
+}
+
+.ad_creative:hover {
+  transform: translateY(-7px);
+}
+
+.ad_creative__description {
+  margin-top: 1em;
+}
+
+.ad_creative__specs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 1.2em 0;
+}
+
+.ad_creative__spec-item {
+  margin: 0.5em;
+  font-weight: 500;
+  font-size: 0.8rem;
+  color: var(--clr-fg-alt);
+}
+
+.ad_creative .link--icon {
+  margin-left: 0.5em;
+}
+
+.public_health__grid {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18em, 1fr));
+  grid-gap: 2em;
+}
+
+.public_health_work {
+  padding: 2em;
+  margin: 0 auto;
+  text-align: center;
+  box-shadow: var(--shadow);
+  transition: transform 0.2s linear;
+}
+
+.public_health:hover {
+  transform: translateY(-7px);
+}
+
+.public_health__description {
+  margin-top: 1em;
+}
+
+.public_health__specs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 1.2em 0;
+}
+
+.public_health__spec-item {
+  margin: 0.5em;
+  font-weight: 500;
+  font-size: 0.8rem;
+  color: var(--clr-fg-alt);
+}
+
+.public_health .link--icon {
   margin-left: 0.5em;
 }
 
