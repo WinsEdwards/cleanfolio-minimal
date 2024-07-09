@@ -59,7 +59,8 @@ body {
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5 {
   line-height: 1.2;
   color: var(--clr-fg-alt);
 }
@@ -78,6 +79,10 @@ h3 {
 
 h4 {
   font-size: 1.3rem;
+}
+
+h5 {
+  font-size: 1rem;
 }
 
 ul {
@@ -370,19 +375,19 @@ main {
   max-width: 90%;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+  /* grid-template-columns: repeat(auto-fit, minmax(20em, 1fr)); */
   grid-gap: 2em;
 }
 
 .public_health_work {
   padding: 2em;
-  margin: 0 auto;
+  margin: 0.2em;
   text-align: center;
   box-shadow: var(--shadow);
   transition: transform 0.2s linear;
 }
 
-.public_health:hover {
+.public_health_work:hover {
   transform: translateY(-7px);
 }
 
