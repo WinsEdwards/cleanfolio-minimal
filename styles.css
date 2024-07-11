@@ -315,15 +315,16 @@ main {
 }
 
 .about__accordion:after {
-  content: '\02795'; /* Unicode character for "plus" sign (+) */
-  font-size: 13px;
+  content: '\FF0B'; /* Unicode character for "plus" sign (+) */
+  font-size: 16px;
+  font-weight: bolder;
   color: var(--clr-fg);
   float: right;
   margin-left: 5px;
 }
 
 .about__accordion.active:after {
-  content: '\02796'; /* Unicode character for "minus" sign (-) */
+  content: '\FF0D'; /* Unicode character for "minus" sign (-) */
   color: var(--clr-primary);
 }
 
@@ -353,16 +354,16 @@ main {
 }
 
 .projects__grid {
+  padding: 20px;
   max-width: 100%;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
-  grid-gap: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px;
+  justify-content: center;
 }
 
 .project {
-  padding: 2em;
-  margin: 0 auto;
+  width: 300px;
   text-align: center;
   transition: transform 0.2s linear;
 }
@@ -394,16 +395,16 @@ main {
 }
 
 .ad_creatives__grid {
+  padding: 20px;
   max-width: 100%;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
-  grid-gap: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 100px;
 }
 
 .ad_creative {
-  padding: 2em;
-  margin: 0 auto;
+  width: 300px;
   text-align: center;
   transition: transform 0.2s linear;
 }
@@ -443,7 +444,7 @@ main {
 }
 
 .public_health_work {
-  padding: 2em;
+  padding: .75em;
   margin: 0.2em;
   text-align: center;
   transition: transform 0.2s linear;
