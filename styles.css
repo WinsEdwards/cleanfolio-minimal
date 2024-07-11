@@ -21,7 +21,7 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
-  line-height: 1.5;
+  line-height: 1.75;
   color: var(--clr-fg);
   background-color: var(--clr-bg);
 }
@@ -277,12 +277,17 @@ main {
   margin-top: 2.4em;
 }
 
+.about__contact {
+  display: flex;
+  padding: 10px;
+}
+
 .about .link--icon {
-  margin-right: 0.8em;
+  margin: .25em;
 }
 
 .about .btn--outline {
-  margin-right: 1em;
+  margin: .5em;
 }
 
 .about__accordion {
@@ -343,6 +348,10 @@ main {
 .about__accordion:hover::before,
 .about__accordion.active::before {
   width: 100%;
+}
+
+.about__accordion:hover::after {
+  color: var(--clr-primary);
 }
 
 .about__panel {
