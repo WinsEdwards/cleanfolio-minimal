@@ -294,7 +294,7 @@ main {
   padding: 0 0 0.3em 0;
   width: 95%;
   text-align: left;
-  /* border-bottom: 2px solid var(--clr-fg); */
+  border-bottom: 2px solid var(--clr-fg);
   outline: none;
   transition: 0.4s;
   flex-direction: column;
