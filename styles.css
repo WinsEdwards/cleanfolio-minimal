@@ -315,15 +315,16 @@ main {
 }
 
 .about__accordion:after {
-  content: '\02795'; /* Unicode character for "plus" sign (+) */
-  font-size: 13px;
+  content: '\FF0B'; /* Unicode character for "plus" sign (+) */
+  font-size: 18px;
+  font-weight: bolder;
   color: var(--clr-fg);
   float: right;
   margin-left: 5px;
 }
 
 .about__accordion.active:after {
-  content: '\02796'; /* Unicode character for "minus" sign (-) */
+  content: '\FF0D'; /* Unicode character for "minus" sign (-) */
   color: var(--clr-primary);
 }
 
@@ -393,24 +394,26 @@ main {
   margin-left: 0.5em;
 }
 
-.ad_creatives__grid {
-  max-width: 100%;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
-  grid-gap: 2em;
+.ad_creatives__slider {
+  width: 300px; 
+  margin: 20px auto;
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
 }
 
-.ad_creative {
-  padding: 2em;
-  margin: 0 auto;
+.ad_creative__slide {
+  width: 100%;
+  flex-shrink: 0;
   text-align: center;
-  transition: transform 0.2s linear;
+  /* transition: transform 0.2s linear; */
+  scroll-snap-align: start;
 }
 
-.ad_creative:hover {
+/* .ad_creative__slide:hover {
   transform: translateY(-7px);
-}
+} */
 
 .ad_creative__description {
   margin-top: 1em;
