@@ -186,8 +186,8 @@ button {
 .btn--plain {
   text-transform: initial;
   background-color: var(--clr-bg-alt);
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
-  border: 0;
+  box-shadow: var(--clr-fg) 0px 3px 0px 0px;
+  /* border: 2px solid var(--clr-fg); */
 }
 
 .btn--plain:hover {
@@ -287,8 +287,78 @@ main {
   margin-right: 1em;
 }
 
+.about__accordion {
+  background-color: var(--clr-bg);
+  color: var(--clr-fg);
+  cursor: pointer;
+  padding: 0 0 0.3em 0;
+  width: 95%;
+  text-align: left;
+  /* border-bottom: 2px solid var(--clr-fg); */
+  outline: none;
+  transition: 0.4s;
+  flex-direction: column;
+  max-width: 600px;
+  margin-top: 3em;
+  position: relative;
+}
+
+.about__panel__desc {
+  font-size: 1rem;
+  max-width: 600px;
+  margin-top: 2.4em;
+  color: var(--clr-fg)
+}
+
+.active, .about__accordion:hover {
+  color: var(--clr-primary);
+  transform: translateY(-5px);
+  border-bottom: none;
+}
+
+.about__accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: var(--clr-fg);
+  float: right;
+  margin-left: 5px;
+}
+
+.about__accordion:after {
+  color: var(--clr-fg)
+}
+
+.active:after {
+  content: "\02796"; /* Unicode character for "minus" sign (-) */
+}
+
+.about__accordion::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0.2em;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: var(--clr-primary);
+  transition: width 0.2s ease-in-out;
+}
+
+.about__accordion:hover::before,
+.link:focus::before {
+  width: 100%;
+}
+
+.about__panel {
+  padding: 0 18px;
+  background-color: var(--clr-bg);
+  display: none;
+  overflow: hidden;
+  color: var(--clr-fg)
+}
+
 .projects__grid {
-  max-width: 90%;
+  max-width: 100%;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
@@ -330,7 +400,7 @@ main {
 }
 
 .ad_creatives__grid {
-  max-width: 90%;
+  max-width: 100%;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
@@ -372,7 +442,7 @@ main {
 }
 
 .public_health__grid {
-  max-width: 90%;
+  max-width: 100%;
   margin: 0 auto;
   display: grid;
   /* grid-template-columns: repeat(auto-fit, minmax(20em, 1fr)); */
@@ -414,7 +484,7 @@ main {
 }
 
 .skills__list {
-  max-width: 75%;
+  max-width: 80%;
   width: 95%;
   margin: 0 auto;
   display: flex;

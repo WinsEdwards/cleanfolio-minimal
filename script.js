@@ -11,6 +11,11 @@ const addThemeClass = (bodyClass, btnClass) => {
 const getBodyTheme = localStorage.getItem('portfolio-theme')
 const getBtnTheme = localStorage.getItem('portfolio-btn-theme')
 
+if (!getBodyTheme && !getBtnTheme) {
+	localStorage.setItem('portfolio-theme', 'dark');
+	localStorage.setItem('portfolio-button-theme', 'fa-sun');
+}
+
 addThemeClass(getBodyTheme, getBtnTheme)
 
 const isDark = () => body.classList.contains('dark')
@@ -61,3 +66,26 @@ const scrollUp = () => {
 }
 
 document.addEventListener('scroll', scrollUp)
+
+const accordions = document.getElementsByClassName('about__accordion');
+const panels = document.getElementsByClassName('about__panel');
+
+const accordionIsActive = (panel) => panel.classList.contains('active');
+
+const toggleAccordion = (index) => {
+  const panel = panels[index];
+  const accordion = accordions[index];
+  if (accordionIsActive(panel)) {
+    panel.classList.remove('active');
+    panel.style.display = 'none';
+    accordion.classList.remove('active');
+  } else {
+    panel.classList.add('active');
+    panel.style.display = 'block';
+    accordion.classList.add('active');
+  }
+};
+
+for (let i = 0; i < accordions.length; i++) {
+  accordions[i].addEventListener('click', () => toggleAccordion(i));
+}
