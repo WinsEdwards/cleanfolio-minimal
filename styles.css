@@ -186,8 +186,6 @@ button {
 .btn--plain {
   text-transform: initial;
   background-color: var(--clr-bg-alt);
-  box-shadow: var(--clr-fg) 0px 3px 0px 0px;
-  /* border: 2px solid var(--clr-fg); */
 }
 
 .btn--plain:hover {
@@ -366,7 +364,6 @@ main {
   padding: 2em;
   margin: 0 auto;
   text-align: center;
-  box-shadow: var(--shadow);
   transition: transform 0.2s linear;
 }
 
@@ -408,7 +405,6 @@ main {
   padding: 2em;
   margin: 0 auto;
   text-align: center;
-  box-shadow: var(--shadow);
   transition: transform 0.2s linear;
 }
 
@@ -450,7 +446,6 @@ main {
   padding: 2em;
   margin: 0.2em;
   text-align: center;
-  box-shadow: var(--shadow);
   transition: transform 0.2s linear;
 }
 
