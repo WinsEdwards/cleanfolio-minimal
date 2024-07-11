@@ -307,7 +307,7 @@ main {
   font-size: 1rem;
   max-width: 600px;
   margin-top: 2.4em;
-  color: var(--clr-fg)
+  color: var(--clr-fg);
 }
 
 .active, .about__accordion:hover {
@@ -324,28 +324,25 @@ main {
   margin-left: 5px;
 }
 
-.about__accordion:after {
-  color: var(--clr-fg)
-}
-
-.active:after {
-  content: "\02796"; /* Unicode character for "minus" sign (-) */
+.about__accordion.active:after {
+  content: '\02796'; /* Unicode character for "minus" sign (-) */
+  color: var(--clr-primary);
 }
 
 .about__accordion::before {
   content: "";
-  display: block;
-  width: 0;
+  display: block; /* Changed from inline to block to make the line work */
+  width: 0; /* Default width set to 0 */
   height: 0.2em;
   position: absolute;
   bottom: 0;
-  left: 0;
-  background-color: var(--clr-primary);
+  left: 0; /* Ensure the line starts from the left edge */
+  background-color: var(--clr-primary); /* Default border color */
   transition: width 0.2s ease-in-out;
 }
 
 .about__accordion:hover::before,
-.link:focus::before {
+.about__accordion.active::before {
   width: 100%;
 }
 
@@ -354,7 +351,7 @@ main {
   background-color: var(--clr-bg);
   display: none;
   overflow: hidden;
-  color: var(--clr-fg)
+  color: var(--clr-fg);
 }
 
 .projects__grid {
