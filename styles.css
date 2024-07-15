@@ -248,6 +248,7 @@ main {
 
 .nav__list-item {
   margin-left: 1.5em;
+  white-space: nowrap;
 }
 
 .nav__hamburger {
@@ -554,7 +555,7 @@ main {
   transition: transform 0.2s ease-in-out;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .header {
     height: 6em;
   }
