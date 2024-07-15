@@ -184,6 +184,7 @@ button {
 }
 
 .btn--plain {
+  text-align: center;
   text-transform: initial;
   background-color: var(--clr-bg-alt);
 }
@@ -511,7 +512,7 @@ main {
   padding: 20px;
   text-align: left;
   border: 2px solid var(--clr-fg);
-  width: 100%;
+  width: 100% - 40px;
   transition: transform 0.2s linear;
   margin: 20px;
 }
@@ -521,7 +522,6 @@ main {
 }
 
 .home-chef-logo {
-  color: white;
   float: right;
   margin: 20px 20px 0px 20px;
   scale: 150%;
@@ -592,6 +592,24 @@ main {
   .about {
     align-items: flex-start;
     margin-top: 2em;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  .references__container {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .reference {
+    width: calc(100% - 40px);
+  }
+
+  .home-chef-logo {
+    float: none;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
   }
 
   .footer {
