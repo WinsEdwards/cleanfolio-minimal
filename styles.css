@@ -597,6 +597,23 @@ main {
     margin-right: 1em;
   }
 
+  .about__role {
+    text-align: center;
+  }
+
+  .about__desc {
+    align-self: center;
+  }
+
+  .about__accordion {
+    align-self: center;
+  }
+
+  .about__contact {
+    display: flex;
+    align-self: center;
+  }
+
   .references__container {
     max-width: 100%;
     margin: 0 auto;
