@@ -513,7 +513,7 @@ main {
   padding: 20px;
   text-align: left;
   border: 2px solid var(--clr-fg);
-  width: 100% - 40px;
+  width: calc(100% - 40px);
   transition: transform 0.2s linear;
   margin: 20px;
 }
@@ -613,17 +613,20 @@ main {
   .references__container {
     max-width: 100%;
     margin: 0 auto;
+    display: flex;
   }
 
   .reference {
     width: calc(100% - 40px);
+    display: flex;
+    flex-direction: column;
   }
 
   .home-chef-logo {
-    float: none;
+    width: 40px;
     display: flex;
+    margin-bottom: 20px;
     justify-content: center;
-    margin: 20px;
   }
 
   .footer {
