@@ -297,7 +297,7 @@ main {
   color: var(--clr-fg);
   cursor: pointer;
   padding: 0 0 0.3em 0;
-  width: 95%;
+  width: 100%;
   text-align: left;
   border-bottom: 2px solid var(--clr-fg);
   outline: none;
@@ -595,10 +595,6 @@ main {
     margin-top: 2em;
     margin-left: 1em;
     margin-right: 1em;
-  }
-
-  .about__role {
-    text-align: center;
   }
 
   .about__desc {
