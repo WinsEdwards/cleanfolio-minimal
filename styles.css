@@ -522,7 +522,7 @@ main {
   padding-top: 20px;
 }
 
-.home-chef-logo {
+.reference-logo {
   float: right;
   margin: 20px 20px 0px 20px;
   scale: 150%;
@@ -622,11 +622,17 @@ main {
     flex-direction: column;
   }
 
-  .home-chef-logo {
-    width: 40px;
+  .reference-logo {
+    width: 50px;
     display: flex;
     margin-bottom: 20px;
+    margin-left: 12px;
     justify-content: center;
+  }
+
+  .emory {
+    width: 90px;
+    margin-left: 22px;
   }
 
   .footer {
